@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html language="en">
+    <head>
+        <meta charset="utf-8">
+        <title>basic document.object</title>
+    </head>
+    <body onclick="myFunction()">
+        <p>Click anywhere in the document to display the active element.</p>
+        <input type="text" value="An input field">
+        <button>A Button</button>
+    
+        <p id="demo"></p>
+    
+        <script>
+            function myFunction() {
+            var x = document.activeElement.tagName;
+            document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+    
+    </body>
+
+</html>
